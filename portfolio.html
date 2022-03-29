@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AntoohTech</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Hina+Mincho&family=Oswald:wght@500&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Hina+Mincho&family=Mukta:wght@300&family=Oswald:wght@500&display=swap');
+      *{
+        scroll-behavior: smooth;
+      }
+  .top-stories{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-basis: 200;
+}
+.top-stories .web_img{
+    width: 300px;
+    height: 300px;
+}
+.web_img img{
+    width: 100%;
+}
+.bn{
+  margin-right: 40px;
+  margin-left: 40px;
+}
+.about1{
+  margin: 40px;
+  text-align: center;
+  background: #F7F9F9;
+  border-radius: 3px;
+
+}
+.about1 h4{
+  font-size: 30px;
+  padding: 10px;
+   font-family: 'Hina Mincho', serif;
+   text-transform: capitalize;
+}
+.about1 .about-story h1{
+  font-size: 35px;
+  font-weight: 600;
+  font-family: 'Oswald', sans-serif;
+  text-decoration: underline;
+  text-decoration-color:#926CB5  ;
+  margin-bottom: 10px;
+  
+}
+.about-story i{
+  color: #16BB70;
+}
+.story-img{
+  width:600px;
+  margin: 10px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+.story-img img{
+  width: 100%;
+  opacity: 0;
+  transform: translateY(4em) rotateZ(-5deg);
+  transition: transform 4s .25s cubic-bezier(0,1,.3,1),
+              opacity .3s .25s ease-out;
+}
+.inline-photo.is-visible {
+  opacity: 1;
+  transform: rotateZ(-2deg);
+}
+.desc h1{
+  color: #926CB5 ;
+  font-family: 'Mukta', sans-serif;
+  font-size: 35px;
+  text-align: start;
+}
+.desc p{
+  text-align: start;
+}
+.desc{
+  display: block;
+  align-items: center;
+}
+.left{
+  float: left;
+  width: 15%;
+  margin-top: 10px;
+}
+.middle{
+  float: left;
+  width: 70%;
+  margin-top: 10px;
+}
+.right{
+  text-align: right;
+  margin-right: 30px;
+}
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.bar-container{
+  width: 100%;
+  background-color:white;
+  text-align: center;
+  color: white;
+  height: 30px;
+  border-radius: 10px;
+}
+.bar-1, .bar-2,.bar-3, .bar-4{
+  
+  height: 100%;
+  border-radius: 10px;
+}
+.bar-1{
+  width: 70%;
+  background: #1399EB ;
+}
+.bar-2{
+  background-color: brown;
+  width: 80%;
+}
+.bar-3{
+  width: 85%;
+  background-color: darkolivegreen;
+}
+.bar-4{
+  width: 75%;
+  background-color: darkorange;
+}
+
+@media only screen and (max-width: 768px) {
+  .side, .middle {
+    width: 100% !important;
+  }
+  .right {
+    display: none;
+  }
+  .top-stories{
+    display: block;
+
+  }
+  }
+    </style>
+</head>
+<body onload="slide()">
+    <div class="top-nav">
+        <div class="logo">
+            <img src="image/download.png" alt="">
+          <h4>Bonny<i class="tec">Tech</i> </h4>
+        </div>
+        <div class="emails-contac">
+           <div class="call">
+             <img src="image/download2.jpg" alt="">
+             <span>+2540113681587</span>
+           </div>
+           <div class="email">
+            <img src="image/down.png" alt="">
+            <span>antoomaingi56@gmail.com</span>
+          </div>
+        </div>
+    </div>
+    <nav>
+    <nav class="navbar navbar-expand-lg navbar-light">  
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                      <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#about2">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">contacts</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          More
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item" href="#">tutorial</a>
+                          <a class="dropdown-item" href="#">web developement</a>
+                          <a class="dropdown-item" href="#">desktop aplication(Java)</a>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+            </div>
+            
+          </nav>
+    </nav>
+    <div class="banner">
+        <div class="slider">
+            <img src="image/slide.jpg" alt="" id="img-slide">
+        </div>
+        <div class="overlay">
+            <div class="about">
+            <img src="image/img.jpg" alt="" height="200" width="200">
+            <h4>Boniface Maingi</h4>
+            <p>Software developer, skillled in web design, full stack web developer, desktop application programming </p>
+            <div class="wat">
+                <button class="btn btn-success">HIRE ME <i>come</i> </button>
+                <a href="#">
+                  <img src="image/wats.jpg" alt="" height="20" width="20" style="margin-left: 20px;" id="img2">
+                </a>
+                
+            </div>
+          </div>
+        </div>
+    </div>
+   <div class="about1">
+     <div class="about-story">
+       <h4>information</h4>
+       <h1 id="about2">ABOUT <i>ME</i></h1>
+     </div>
+     <div class="top-stories">
+       <div class="story-img">
+          <img src="image/web.jpg" alt="" class="inline-photo show-on-scroll">
+       </div>
+       <div class="desc">
+         <h1>web developement</h1>
+         <p>highly skilled in web designing and web programming as i am fammiliar with all designing and scripting  langauge used</p>
+         <div class="rating">Ratings</div>
+         <div class="row1">
+           <div class="left">
+             <p>HTML</p>
+           </div>
+           <div class="middle">
+             <div class="bar-container">
+              <div class="bar-1"></div>
+             </div>
+           </div>
+           <div class="right">
+             <span>70%</span>
+           </div>
+         </div>
+         <div class="row1">
+          <div class="left">
+            <p>PHP</p>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+             <div class="bar-2"></div>
+            </div>
+          </div>
+          <div class="right">
+            <span>80%</span>
+          </div>
+        </div>
+        <div class="row1">
+          <div class="left">
+            <p>JAVA</p>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+             <div class="bar-3"></div>
+            </div>
+          </div>
+          <div class="right">
+            <span>90%</span>
+          </div>
+        </div>
+        <div class="row1">
+          <div class="left">
+            <p>JAVASCRIPT</p>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+             <div class="bar-4"></div>
+            </div>
+          </div>
+          <div class="right">
+            <span>75</span>
+          </div>
+        </div>
+       </div>
+     </div>
+   </div>
+  
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+ 
+<script>
+    var slideimg =  document.getElementById("img-slide");
+    var images  = new Array(
+        "image/slide.jpg",
+        "image/slide1.jpg",
+        "image/slide2.jpg",
+        "image/slide3.JPEG",
+        "image/slide4.JPG"
+    );
+    var len = images.length;
+    var i =0;
+    function slide(){
+        if(i>len-1){
+            i=0;
+        }
+        slideimg.src = images[i];
+        i++;
+        setTimeout('slide()',3000);
+    }
+    var scroll = window.requestAnimationFrame ||
+             // IE Fallback
+             function(callback){ window.setTimeout(callback, 1000/60)};
+var elementsToShow = document.querySelectorAll('.show-on-scroll'); 
+
+function loop() {
+
+    Array.prototype.forEach.call(elementsToShow, function(element){
+      if (isElementInViewport(element)) {
+        element.classList.add('is-visible');
+      } else {
+        element.classList.remove('is-visible');
+      }
+    });
+
+    scroll(loop);
+}
+
+// Call the loop for the first time
+loop();
+
+// Helper function from: http://stackoverflow.com/a/7557433/274826
+function isElementInViewport(el) {
+  // special bonus for those using jQuery
+  if (typeof jQuery === "function" && el instanceof jQuery) {
+    el = el[0];
+  }
+  var rect = el.getBoundingClientRect();
+  return (
+    (rect.top <= 0
+      && rect.bottom >= 0)
+    ||
+    (rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.top <= (window.innerHeight || document.documentElement.clientHeight))
+    ||
+    (rect.top >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
+  );
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.header{
+    width: 1600px;
+    height: 7vh;
+    background-color:blue;
+    width: 100%;  
+}
+
+
+.nav-navbar1{
+    display: flex;
+    width: 100%;
+    list-style: none;
+    margin-left: 100px;
+    overflow: hidden;
+}
+.nav-navbar1 .nav-item1{
+    padding: 5px;
+    font-size: 25px;
+    float: right;
+}
+.nav-navbar1 .nav-item1 .nav-link1{
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.float{
+    float: right;
+    margin: auto;
+}
+@media only screen and (max-width: 900px) {
+    .header{
+        width: auto;
+    }
+    .nav-item1{
+        font-size: 15px;
+    }
+    .nav-navbar1{
+        margin-left: 10px;
+    }
+}
+.card{
+    margin-top: 40px !important;
+}
+.img-fluid{
+    border-radius: 100%;
+}
+.alig{
+    text-align: center;
+}
+.card-header{
+    text-align: center;
+}
+
+.header2{
+    height: 8vh;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    background-color: #EBEDEF;
+    outline: none;
+    box-shadow: 10px 10px 10px 10px #BFC9CA;
+}
+.header2 h3{
+    font-family:montserrat sans-serif;
+    font-weight: 20px;
+    text-align: center;
+    color:#3ABD71; 
+    animation:  spin infinite;
+    animation-duration: 2s ;
+    text-transform: capitalize;
+    
+    
+
+}
+@keyframes spin{
+    0% {margin-left:  20px ; font-size: 20px;}
+    50% {margin-left: 40px; font-size: 30px;}
+    100% {margin-left: 80px; font-size: 40px;}
+}
+.btn2{
+    position: absolute;
+    bottom: 10px;
+    right: 30px;
+}
+.form{
+    margin-top: 90px;
+    width: 1000px;
+    margin-left: 50px;
+}
+.form-group label{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    margin-left: 30px;
+}
+.form-group #bnnn{
+    text-align: center;
+}
